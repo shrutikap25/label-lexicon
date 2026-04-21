@@ -1,5 +1,5 @@
 # Label Lexicon
-Built for educational purposes as a final project for a front-end web development course. April 2026.
+Built for educational purposes as a final project for a front-end web development course.
 
 
 # Overview

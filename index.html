@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Label Lexicon</title>
+</head>
+<body>
+    <!--Header and Nav-->
+    <header>
+        <nav class="main-nav">
+            <span>labellexicon</span>
+            <button class="hamburger"><i class="bi bi-list"></i></button>
+            <ul class="nav-container">
+                <li><a href="#purpose">Purpose</a></li>
+                <li><a href="#glossary">Explore the Glossary</a></li>
+                <li><a href="#submit">Submit a label</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main Section-->
+    <main>
+        <!--Hero Section-->
+        <section id="hero">
+            <div id="hero-container">
+                <h1>Not all food labels are created equal.</h1>
+                <p>Some are rigorously certified by third parties. Others are unregulated marketing claims. This glossary helps you tell the difference.</p>
+                <a href="#glossary" class="btn-primary">Explore the Glossary</a>
+            </div>
+        </section>
+        <!--Purpose Section-->
+        <section id="purpose">
+            <div id="purpose-left-container">
+                <h2>Purpose</h2>
+                <p>Food labels shape purchasing decisions but many claims on packaging are loosely defined or completely unregulated. This glossary covers both official third-party certifications and common marketing claims, so you know exactly what you're buying.</p>
+                <p id="disclaimer-purpose"><span id="disclaimer">Built for educational purposes. All definitions sourced and adapted from official organizations and regulatory bodies.</span></p>
+            </div>
+            <div id="purpose-right-container">
+                <div class="purpose-div-item">
+                    <h2>15+</h2>
+                    <h3>Labels Covered</h3>
+                </div>
+                <div class="purpose-div-item">
+                    <h2>2</h2>
+                    <h3>Types: Certs &amp; Claims</h3>
+                </div>
+            </div>
+        </section>
+        <!--Glossary Section-->
+        <section id="glossary">
+            <h2>Explore the Glossary</h2>
+            <p>Search and filter through the most common labels found on North American food packaging.</p>
+            <div class="main-search-container">   
+                <div id="search-container">
+                    <input type="text" id="search" class="glossary-search" placeholder="Search for a label...">
+                </div>
+                <div id="filters">
+                    <button class="chip active" data-category="all">All</button>
+                    <button class="chip" data-category="Certification">Certification</button>
+                    <button class="chip" data-category="Claim">Claim</button>
+                </div>
+            </div>
+                <div id="cards-grid"><!--JS renders cards-->
+                    <!-- <article class="card">
+                        <div class="card-top">
+                            <span class="card-filters">Certification</span>
+                            <div class="card-icon">
+                                <i class="bi bi-patch-check"></i>
+                            </div>
+                        </div>
+                        <h3 class="card-title">USDA Organic</h3>
+                            <p class="card-definition">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus magna vel ex cursus placerat.</p>
+                        <div class="card-insight">
+                            <p class="card-insight-label">Insight</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://www.usda.gov" target="_blank" class="card-source">View source<i class="bi bi-box-arrow-up-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-top">
+                            <span class="card-filters">Claim</span>
+                            <div class="card-icon">
+                                <i class="bi bi-patch-exclamation"></i>
+                            </div>
+                        </div>
+                        <h3 class="card-title">Grass-Fed</h3>
+                            <p class="card-definition">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus magna vel ex cursus placerat.</p>
+                        <div class="card-insight">
+                            <p class="card-insight-label">Insight</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://www.usda.gov" target="_blank" class="card-source">View source<i class="bi bi-box-arrow-up-right"></i></a>
+                        </div>
+                    </article> -->
+                </div>
+                <button id="load-more">Load More Labels</button>
+        </section>
+        <!--Feedback Section-->
+        <section id="feedback">
+            <p>Was this glossary helpful?</p>
+            <div>
+                <button class="btn-feedback" id="vote-up"><i class="bi bi-hand-thumbs-up"></i></button>
+                <button class="btn-feedback" id="vote-down"><i class="bi bi-hand-thumbs-down"></i></button>
+            </div>
+            <p id="vote-confirmation" style="display:none;">Thanks for your feedback!</p>
+        </section>
+        <!--Submit a label Section-->
+        <section id="submit">
+            <div id="submit-img">
+                <h2>Submit a label</h2>
+                <p>Don't see a label represented? Fill out the form to suggest a new addition.</p>
+            </div>
+            <div id="submit-form">
+                <form action="https://formspree.io/f/mojyvywe" method="POST" novalidate>
+                    <label for="label-name">Label Name</label>
+                    <input type="text" id="label-name" name="label-name" placeholder="e.g. Regenerative Organic">
+                    <label for="message">Description & Context</label>
+                    <textarea name="message" id="message" placeholder="Tell us a bit about the label"></textarea>
+                    <button type="submit" id="submit-btn" disabled>Submit</button>
+                </form>
+                <div id="form-confirmation" style="display:none;">
+                    <p >Thanks for your suggestion! We'll review it and consider adding it to the glossary.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Footer-->
+    <footer>
+        <p>© 2026 Label Lexicon</p>
+    </footer>
+</body>
+</html>
