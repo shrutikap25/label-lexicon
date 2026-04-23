@@ -358,7 +358,7 @@
                     formConfirmation.style.display = 'block';
                 }
             })
-            .catch(function() { // runs if something goes wrong, resets the button
+            .catch(function() { // runs if something goes wrong but no error message because button is disabled
                 submitBtn.textContent = 'Submit'; 
                 submitBtn.disabled = false;
             });
