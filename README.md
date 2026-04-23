@@ -5,11 +5,9 @@ Built for educational purposes as a final project for a front-end web developmen
 # Overview
 A one-page interactive web glossary that helps shoppers understand the difference between official food certifications and unregulated marketing claims commonly found on food packaging. Users can search and filter terms, read plain-English definitions, and submit labels they’d like to see represented in the directory. 
 
-Live site: 
-
 
 # About the project
-Food packaging is full of labels and most consumers can't tell the difference. Existing resources aren’t presented in a manner that makes the information accessible, searchable, and easy to understand. The Label Lexicon covers 15+ food labels.
+Food packaging is full of labels and most consumers can't tell the difference. Existing resources aren’t presented in a manner that makes the information accessible, searchable, and easy to understand. Label Lexicon covers 15+ food labels.
 
 
 # Features
@@ -24,7 +22,7 @@ Food packaging is full of labels and most consumers can't tell the difference. E
 - HTML5
 - CSS3 (Flexbox & Grid, mobile first)
 - Vanilla JavaScript
-- Form handling: 
+- Form handling: Formspree 
 
 # Sources
-All definitions sourced and adapted from official organizations and regulatory bodies. 
+For educational purposes. Sources vary by label.

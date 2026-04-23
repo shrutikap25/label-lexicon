@@ -36,11 +36,11 @@
             <div id="purpose-left-container">
                 <h2>Purpose</h2>
                 <p>Food labels shape purchasing decisions but many claims on packaging are loosely defined or completely unregulated. This glossary covers both official third-party certifications and common marketing claims, so you know exactly what you're buying.</p>
-                <p id="disclaimer-purpose"><span id="disclaimer">Built for educational purposes. All definitions sourced and adapted from official organizations and regulatory bodies.</span></p>
+                <p id="disclaimer-purpose"><span id="disclaimer">Built for educational purposes. All definitions and insights are editorially curated, and sources vary by label. Information may not reflect the most current regulatory standards.</span></p>
             </div>
             <div id="purpose-right-container">
                 <div class="purpose-div-item">
-                    <h2>15+</h2>
+                    <h2>10</h2>
                     <h3>Labels Covered</h3>
                 </div>
                 <div class="purpose-div-item">
@@ -58,61 +58,26 @@
                     <input type="text" id="search" class="glossary-search" placeholder="Search for a label...">
                 </div>
                 <div id="filters">
-                    <button class="chip active" data-category="all">All</button>
+                    <button class="chip active" data-category="all">View All</button>
                     <button class="chip" data-category="Certification">Certification</button>
                     <button class="chip" data-category="Claim">Claim</button>
                 </div>
             </div>
-                <div id="cards-grid"><!--JS renders cards-->
-                    <!-- <article class="card">
-                        <div class="card-top">
-                            <span class="card-filters">Certification</span>
-                            <div class="card-icon">
-                                <i class="bi bi-patch-check"></i>
-                            </div>
-                        </div>
-                        <h3 class="card-title">USDA Organic</h3>
-                            <p class="card-definition">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus magna vel ex cursus placerat.</p>
-                        <div class="card-insight">
-                            <p class="card-insight-label">Insight</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="https://www.usda.gov" target="_blank" class="card-source">View source<i class="bi bi-box-arrow-up-right"></i></a>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="card-top">
-                            <span class="card-filters">Claim</span>
-                            <div class="card-icon">
-                                <i class="bi bi-patch-exclamation"></i>
-                            </div>
-                        </div>
-                        <h3 class="card-title">Grass-Fed</h3>
-                            <p class="card-definition">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus magna vel ex cursus placerat.</p>
-                        <div class="card-insight">
-                            <p class="card-insight-label">Insight</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="https://www.usda.gov" target="_blank" class="card-source">View source<i class="bi bi-box-arrow-up-right"></i></a>
-                        </div>
-                    </article> -->
-                </div>
+                <div id="cards-grid"><!--JS renders cards--></div>
                 <button id="load-more">Load More Labels</button>
         </section>
         <!--Feedback Section-->
         <section id="feedback">
             <p>Was this glossary helpful?</p>
-            <div>
+            <div id="feedback-div">
                 <button class="btn-feedback" id="vote-up"><i class="bi bi-hand-thumbs-up"></i></button>
                 <button class="btn-feedback" id="vote-down"><i class="bi bi-hand-thumbs-down"></i></button>
             </div>
-            <p id="vote-confirmation" style="display:none;">Thanks for your feedback!</p>
+            <p id="vote-confirmation">Thanks for your feedback!</p>
         </section>
         <!--Submit a label Section-->
         <section id="submit">
-            <div id="submit-img">
+            <div id="form-left">
                 <h2>Submit a label</h2>
                 <p>Don't see a label represented? Fill out the form to suggest a new addition.</p>
             </div>
@@ -124,7 +89,7 @@
                     <textarea name="message" id="message" placeholder="Tell us a bit about the label"></textarea>
                     <button type="submit" id="submit-btn" disabled>Submit</button>
                 </form>
-                <div id="form-confirmation" style="display:none;">
+                <div id="form-confirmation">
                     <p >Thanks for your suggestion! We'll review it and consider adding it to the glossary.</p>
                 </div>
             </div>
@@ -132,7 +97,7 @@
     </main>
     <!--Footer-->
     <footer>
-        <p>© 2026 Label Lexicon</p>
+        <p>&copy 2026 Label Lexicon</p>
     </footer>
 </body>
 </html>
