@@ -7,7 +7,7 @@ A one-page interactive web glossary that helps shoppers understand the differenc
 
 
 # About the project
-Food packaging is full of labels and most consumers can't tell the difference. Existing resources aren’t presented in a manner that makes the information accessible, searchable, and easy to understand. Label Lexicon covers 15+ food labels.
+Food packaging is full of labels and most consumers can't tell the difference. Existing resources aren’t presented in a manner that makes the information accessible, searchable, and easy to understand.
 
 
 # Features
